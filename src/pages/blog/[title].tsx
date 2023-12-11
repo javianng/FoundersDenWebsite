@@ -12,6 +12,7 @@ import question_mark from "public/question_mark.png"
 import { EyeIcon } from '@heroicons/react/24/solid';
 import { Interweave } from 'interweave';
 import { FacebookIcon, FacebookShareButton, LinkedinIcon, LinkedinShareButton, RedditIcon, RedditShareButton, TelegramIcon, TelegramShareButton, TwitterShareButton, WhatsappIcon, WhatsappShareButton, XIcon } from 'react-share';
+import { useState, useEffect } from 'react';
 
 export default function BlogPost() {
     const router = useRouter();
@@ -21,7 +22,11 @@ export default function BlogPost() {
         title: title as string,
     });
 
-    const shareUrl = window.location.href
+    const [shareUrl, setShareUrl] = useState("");
+
+    useEffect(() => {
+        setShareUrl(window.location.href);
+    }, []);
 
     return (
         <PageLayout>

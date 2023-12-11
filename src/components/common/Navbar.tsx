@@ -6,7 +6,7 @@ export default function Navbar() {
             <div className="navbar bg-base-100 justify-center">
                 <div className="w-screen max-w-7xl mx-12">
                     <div className="flex-1">
-                        <a className="btn btn-ghost text-xl">Founder&apos;s Den</a>
+                        <Link className="btn btn-ghost text-xl" href="/">Founder&apos;s Den</Link>
                     </div>
                     <div className="flex-none">
                         <ul className="menu menu-horizontal px-1">
