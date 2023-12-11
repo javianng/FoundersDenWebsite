@@ -1,3 +1,4 @@
+import { z } from "zod";
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 
 export const postRouter = createTRPCRouter({
@@ -17,4 +18,21 @@ export const postRouter = createTRPCRouter({
             take: 6, // Get the top 6 trending posts
         });
     }),
+    readByTitle: publicProcedure
+        .input(
+            z.object({
+                title: z.string(),
+            }),
+        )
+        .query(async ({ ctx, input }) => {
+            const post = await ctx.db.post.findUnique({
+                where: {
+                    title: input.title,
+                },
+            });
+            if (!post) {
+                throw new Error("Post not found");
+            }
+            return post;  // No need for await here
+        }),
 });

@@ -1,16 +1,16 @@
 import PageLayout from "~/components/common/PageLayout";
+import FixedWidthContainer from "~/components/common/FixedWidthContainer";
 import AllBlog from "~/components/blog/AllBlog";
 import TrendingBlog from "~/components/blog/TrendingBlog";
-import FixedWidthContainer from "~/components/common/FixedWidthContainer";
+import Hero from "~/components/blog/Hero";
 
 export default function blog() {
     return (
         <PageLayout>
+            <Hero />
             <FixedWidthContainer>
-                <h1 className="text-4xl font-bold text-center text-brand-500">
-                    Blog
-                </h1>
                 <TrendingBlog />
+                <hr />
                 <AllBlog />
             </FixedWidthContainer>
         </PageLayout >
