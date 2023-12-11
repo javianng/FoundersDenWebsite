@@ -21,7 +21,7 @@ export default function AllBlog() {
                                         <Image src={post.authorimage ?? question_mark} alt={post.author} width={300} height={300} />
                                     </div>
                                 </div>
-                                <h3>{post.author}</h3>
+                                <h3 className="text-base">{post.author}</h3>
                             </div>
                             <Link href={`/blog/${encodeURIComponent(post.title)}`}>
                                 <h2 className="font-extrabold capitalize line-clamp-2 py-2 text-2xl">{post.title}</h2>

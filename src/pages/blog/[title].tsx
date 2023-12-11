@@ -11,6 +11,7 @@ import question_mark from "public/question_mark.png"
 
 import { EyeIcon } from '@heroicons/react/24/solid';
 import { ShareIcon } from '@heroicons/react/24/solid';
+import { Interweave } from 'interweave';
 
 export default function BlogPost() {
     const router = useRouter();
@@ -20,51 +21,10 @@ export default function BlogPost() {
         title: title as string,
     });
 
-    const markdown = `
-    # h1 Heading 8-)
-    ## h2 Heading
-    ### h3 Heading
-    #### h4 Heading
-    ##### h5 Heading
-    ###### h6 Heading
-    
-    
-    ## Horizontal Rules
-    
-    ___
-    
-    ---
-    
-    ***
-    
-    
-    ## Typographic replacements
-    
-    Enable typographer option to see result.
-    
-    (c) (C) (r) (R) (tm) (TM) (p) (P) +-
-    
-    test.. test... test..... test?..... test!....
-    
-    !!!!!! ???? ,,  -- ---
-    
-    "Smartypants, double quotes" and 'single quotes'
-    
-    
-    ## Emphasis
-    
-    **This is bold text**
-    
-    __This is bold text__
-    
-    *This is italic text*
-    
-`
-
     return (
         <PageLayout>
             <ReadingWidthContainer>
-                <h1 className=' font-bold text-5xl text-brand-400'>
+                <h1 className='font-bold text-5xl text-brand-400'>
                     {data?.title}
                 </h1>
 
@@ -75,10 +35,10 @@ export default function BlogPost() {
                                 <Image src={data?.authorimage ?? question_mark} alt={data?.author ?? ""} width={300} height={300} />
                             </div>
                         </div>
-                        <h3>{data?.author}</h3>
+                        <h3 className='text-base'>{data?.author}</h3>
                     </div>
                     <div className='flex'>
-                        <h3>
+                        <h3 className='text-base'>
                             {data?.readingtime}
                             <span>{" min read"}</span>
                             <span className="px-2">{"·"}</span>
@@ -108,9 +68,11 @@ export default function BlogPost() {
                     width={1600} height={1600}
                     alt={data?.title ?? ""}
                 />
-                {/* <Markdown className="mt-8 text-lg">
-                    {markdown}
-                </Markdown> */}
+                <div>
+                    <Interweave
+                        content={data?.content ?? ""}
+                    />
+                </div>
             </ReadingWidthContainer>
         </PageLayout>
     );

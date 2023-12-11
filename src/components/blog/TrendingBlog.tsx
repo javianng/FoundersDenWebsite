@@ -37,7 +37,7 @@ export default function TrendingBlog() {
                                         </div>
                                         <h3>{post.author}</h3>
                                     </div>
-                                    <h2 className="font-extrabold capitalize line-clamp-2 py-2">{post.title}</h2>
+                                    <h2 className="font-extrabold capitalize line-clamp-2 py-2 text-base">{post.title}</h2>
                                     <div className="flex flex-col">
                                         <h4 className="font-extralight">
                                             {post.updatedAt.toLocaleDateString('en-US', {
