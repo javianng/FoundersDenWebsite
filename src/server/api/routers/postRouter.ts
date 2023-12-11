@@ -10,4 +10,11 @@ export const postRouter = createTRPCRouter({
             orderBy: { createdAt: "desc" },
         });
     }),
+
+    getTrending: publicProcedure.query(({ ctx }) => {
+        return ctx.db.post.findMany({
+            orderBy: { views: "desc" }, // Assuming 'view' is the property for popularity
+            take: 6, // Get the top 6 trending posts
+        });
+    }),
 });

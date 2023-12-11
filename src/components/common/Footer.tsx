@@ -1,8 +1,8 @@
 export default function Footer() {
     return (
-        <div className=" bg-base-200 flex justify-center">
+        <div className="bg-base-200 flex justify-center px-2">
 
-            <footer className="footer p-10  text-base-content max-w-7xl">
+            <footer className="footer p-10 text-base-content max-w-7xl">
                 <nav>
                     <header className="footer-title">Services</header>
                     <a className="link link-hover">Branding</a>
