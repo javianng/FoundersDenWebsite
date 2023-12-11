@@ -6,8 +6,9 @@ generator client {
 }
 
 datasource db {
-    provider = "sqlite"
-    url      = env("DATABASE_URL")
+    provider     = "mysql"
+    url          = env("DATABASE_URL")
+    relationMode = "prisma"
 }
 
 model Post {
@@ -15,6 +16,16 @@ model Post {
     name      String
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
+    tags      Tag[]
+    author    String
+    content   String?  @db.Text
+    image     String?  @db.Text
 
     @@index([name])
+}
+
+model Tag {
+    id   String @id @default(cuid())
+    post Post[]
+    tag  String
 }
