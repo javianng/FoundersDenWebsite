@@ -16,7 +16,7 @@ export default function TrendingBlog() {
 
             <div className="flex items-center pb-4">
                 <ArrowTrendingUpIcon className="w-6 h-6 mr-3" />
-                <h1 className="font-semibold">Trending on Founder's Blog</h1>
+                <h1 className="font-semibold">Trending on Founder&apos;s Blog</h1>
             </div>
 
             {/* data section */}
