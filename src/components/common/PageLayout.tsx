@@ -13,8 +13,8 @@ type PageLayoutProps = {
 export default function PageLayout(props: PageLayoutProps) {
     const {
         children,
-        title = "Project Geek",
-        description = "Connecting People",
+        title = "Founder's Den",
+        description = "Connecting Founders to Domain Expertise",
         className = "text-brand-300 bg-neutral-50"
     } = props;
 
