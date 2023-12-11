@@ -1,20 +1,42 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
     provider = "prisma-client-js"
 }
 
 datasource db {
-    provider = "sqlite"
-    url      = env("DATABASE_URL")
+    provider     = "mysql"
+    url          = env("DATABASE_URL")
+    relationMode = "prisma"
 }
 
 model Post {
     id        Int      @id @default(autoincrement())
-    name      String
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
 
-    @@index([name])
+    title       String  @unique
+    author      String
+    summary     String? @db.Text
+    content     String? @db.Text
+    readingtime Int?
+    image       String?
+    authorimage String? @db.Text
+    views       Int?
+    tags        Tag[]
+
+    @@index([title])
+}
+
+model Tag {
+    id   String @id @default(cuid())
+    tag  String
+    post Post[]
+}
+
+model PostToTag {
+    A Int
+    B String
+
+    @@unique([A, B], map: "_PostToTag_AB_unique")
+    @@index([B], map: "_PostToTag_B_index")
+    @@map("_PostToTag")
 }
