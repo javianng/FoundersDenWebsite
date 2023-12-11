@@ -8,7 +8,7 @@ type PageLayoutProps = {
     title?: string;
     description?: string;
     className?: string;
-};
+}
 
 export default function PageLayout(props: PageLayoutProps) {
     const {
@@ -29,5 +29,5 @@ export default function PageLayout(props: PageLayoutProps) {
             {children}
             <Footer />
         </div>
-    );
+    )
 }
