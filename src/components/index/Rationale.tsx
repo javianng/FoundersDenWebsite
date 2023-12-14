@@ -21,7 +21,7 @@ export default function Rationale() {
                     <h2 className="text-lg capitalize">
                         For founders
                     </h2>
-                    <Image src={indexRationaleFounder} alt={""} className="card w-1/2 min-h-fit" />
+                    <Image src={indexRationaleFounder} alt={""} className="card w-1/2 min-h-fit" placeholder='blur' />
                 </div>
                 <div className="flex flex-col items-start justify-center">
                     <div className="flex flex-row items-center">

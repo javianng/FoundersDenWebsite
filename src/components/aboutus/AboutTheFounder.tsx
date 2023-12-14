@@ -33,7 +33,7 @@ export default function AboutTheFounder() {
                                     </div>
                                     <div className="avatar">
                                         <div className="rounded-xl shadow">
-                                            <Image src={javian} alt={"me"} />
+                                            <Image src={javian} alt={"me"} placeholder='blur' />
                                             <div className="absolute top-3 left-3">
                                                 <div>
                                                     <CheckBadgeIcon className="h-7 fill-brand-600" />
