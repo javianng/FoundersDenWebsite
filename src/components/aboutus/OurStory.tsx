@@ -36,14 +36,14 @@ export default function OurStory() {
                             </div>
                         </div>
                         <div className="hidden lg:flex lg:w-[33%]">
-                            <Image src={visionImage} alt={""} className="card" />
+                            <Image src={visionImage} alt={""} className="card" placeholder='blur' />
                         </div>
                     </div>
                 </FixedWidthContainer>
                 <FixedWidthContainer>
                     <div className="flex flex-row gap-7 items-center">
                         <div className="hidden lg:flex lg:w-[33%]">
-                            <Image src={missionImage} alt={""} className="card" />
+                            <Image src={missionImage} alt={""} className="card" placeholder='blur' />
                         </div>
                         <div className="flex flex-col gap-3 w-full lg:w-[66%] chat-end chat">
                             <div className="chat-bubble bg-brand-600 flex flex-col gap-4 p-8 shadow-lg">

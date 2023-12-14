@@ -22,7 +22,7 @@ export default function TrendingBlog() {
 
             {/* data section */}
 
-            <div className="grid grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {data?.map((post, counter = 0) => (
                     <div key={post.id}>
                         <Link href={`/blog/${encodeURIComponent(post.title)}`}>
@@ -32,12 +32,17 @@ export default function TrendingBlog() {
                                     <div className="flex items-center pt-1.5">
                                         <div className="avatar">
                                             <div className="w-5 rounded mr-2">
-                                                <Image src={post.authorimage ?? question_mark} alt={post.author} width={300} height={300} />
+                                                <Image
+                                                    src={post.authorimage ?? question_mark}
+                                                    alt={post.author}
+                                                    width={300}
+                                                    height={300}
+                                                />
                                             </div>
                                         </div>
                                         <h3>{post.author}</h3>
                                     </div>
-                                    <h2 className="font-extrabold capitalize line-clamp-2 py-2 text-base">{post.title}</h2>
+                                    <h2 className="font-extrabold capitalize line-clamp-2 my-2 text-base">{post.title}</h2>
                                     <div className="flex flex-col">
                                         <h4 className="font-extralight">
                                             {post.updatedAt.toLocaleDateString('en-US', {

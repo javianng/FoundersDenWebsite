@@ -7,21 +7,20 @@ import indexRationaleTechnicalExperts from "public/indexRationaleTechnicalExpert
 export default function Rationale() {
     return (
         <FixedWidthContainer>
-            <h1 className="text-center text-3xl capitalize">Built by
-                <span className="text-brand-500">
-                    &nbsp;entrepreneurs&nbsp;
-                </span>
-                for
-                <span className="text-brand-500">
-                    &nbsp;entrepreneurs&nbsp;
-                </span>
+            <h1 className="text-center text-3xl">
+                Built By <span className="text-brand-500 ">Entrepreneurs</span> For <span className="text-brand-500">Entrepreneurs</span>
             </h1>
-            <div className="grid grid-cols-2 pt-4 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 pt-4 gap-8">
                 <div className="flex flex-col justify-center items-center">
                     <h2 className="text-lg capitalize">
                         For founders
                     </h2>
-                    <Image src={indexRationaleFounder} alt={""} className="card w-1/2 min-h-fit" placeholder='blur' />
+                    <Image
+                        src={indexRationaleFounder}
+                        alt={""}
+                        className="card w-1/2 min-h-fit"
+                        placeholder='blur'
+                    />
                 </div>
                 <div className="flex flex-col items-start justify-center">
                     <div className="flex flex-row items-center">
@@ -59,7 +58,12 @@ export default function Rationale() {
                     <h2 className="text-lg capitalize">
                         For technical experts
                     </h2>
-                    <Image src={indexRationaleTechnicalExperts} alt={""} className="card w-1/2 min-h-fit" />
+                    <Image
+                        src={indexRationaleTechnicalExperts}
+                        alt={""}
+                        className="card w-1/2 min-h-fit"
+                        placeholder='blur'
+                    />
                 </div>
                 <div className="flex flex-col items-start justify-center">
                     <div className="flex flex-row items-center">

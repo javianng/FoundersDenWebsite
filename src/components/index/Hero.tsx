@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Hero() {
     return (
         <div className="flex justify-center">
-            <div className="w-screen max-w-7xl mx-12">
+            <div className="w-screen max-w-7xl lg:mx-12">
                 <div className="max-w-7xl">
                     <div className="grid grid-rows-2 gird-cols-1 lg:grid-rows-1 lg:grid-cols-2 h-screen max-h-[42rem]">
                         <div className="hero group" style={{ backgroundImage: 'url(/indexHeroFounder.jpeg)' }}>

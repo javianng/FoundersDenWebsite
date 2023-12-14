@@ -38,7 +38,12 @@ export default function BlogPost() {
                     <div className="flex items-center">
                         <div className="avatar">
                             <div className="w-12 rounded mr-4">
-                                <Image src={data?.authorimage ?? question_mark} alt={data?.author ?? ""} width={300} height={300} />
+                                <Image
+                                    src={data?.authorimage ?? question_mark}
+                                    alt={data?.author ?? ""}
+                                    width={300}
+                                    height={300}
+                                />
                             </div>
                         </div>
                         <h3 className='text-base'>{data?.author}</h3>
@@ -105,7 +110,8 @@ export default function BlogPost() {
                 <hr className='my-4 border-brand-500' />
                 <Image
                     src={data?.authorimage ?? question_mark}
-                    width={1600} height={1600}
+                    width={1600}
+                    height={1600}
                     alt={data?.title ?? ""}
                 />
                 <div>
