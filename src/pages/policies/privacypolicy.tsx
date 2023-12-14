@@ -9,7 +9,7 @@ export default function privacypolicy() {
                     <div className="flex flex-col gap-3">
                         <h1 className="font-bold text-5xl pb-3">Privacy Policy</h1>
                         <p>
-                            This Privacy Policy describes how Founder's Den ("we," "us," or "our") collects, uses, and discloses your personal information when you visit our website or use our services. By accessing or using our services, you agree to the terms of this Privacy Policy.
+                            This Privacy Policy describes how Founder&apos;s Den (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) collects, uses, and discloses your personal information when you visit our website or use our services. By accessing or using our services, you agree to the terms of this Privacy Policy.
                         </p>
                         <h2>1. Information We Collect</h2>
                         <p>

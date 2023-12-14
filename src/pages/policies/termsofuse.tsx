@@ -9,7 +9,7 @@ export default function termsofuse() {
                     <div className="flex flex-col gap-3">
                         <h1 className="font-bold text-5xl pb-3">Terms of Use</h1>
                         <p>
-                            Welcome to Founder's Den! These terms of use ("Terms") govern your use of our website, services, and related content. By accessing or using our services, you agree to comply with and be bound by these Terms. If you do not agree with any part of these Terms, please do not use our services.
+                            Welcome to Founder&apos;s Den! These terms of use (&quot;Terms&quot;) govern your use of our website, services, and related content. By accessing or using our services, you agree to comply with and be bound by these Terms. If you do not agree with any part of these Terms, please do not use our services.
                         </p>
                         <h2>1. Acceptance of Terms</h2>
                         <p>
@@ -25,7 +25,7 @@ export default function termsofuse() {
                         </p>
                         <h2>4. Intellectual Property</h2>
                         <p>
-                            All content on this website, including text, graphics, logos, images, and software, is the property of Founder's Den and is protected by intellectual property laws. You may not use, reproduce, distribute, or create derivative works based on this content without explicit permission.
+                            All content on this website, including text, graphics, logos, images, and software, is the property of Founder&apos;s Den and is protected by intellectual property laws. You may not use, reproduce, distribute, or create derivative works based on this content without explicit permission.
                         </p>
                         <h2>5. Privacy</h2>
                         <p>
@@ -33,7 +33,7 @@ export default function termsofuse() {
                         </p>
                         <h2>6. Limitation of Liability</h2>
                         <p>
-                            Founder's Den and its affiliates will not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your access to or use of our services.
+                            Founder&apos;s Den and its affiliates will not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your access to or use of our services.
                         </p>
                         <h2>7. Governing Law</h2>
                         <p>
@@ -41,7 +41,7 @@ export default function termsofuse() {
                         </p>
                         <h2>8. Changes to Terms</h2>
                         <p>
-                            Founder's Den reserves the right to modify or replace these Terms at any time. Any changes will be effective immediately upon posting on the website. Your continued use of our services after any such changes constitutes your acceptance of the new Terms.
+                            Founder&apos;s Den reserves the right to modify or replace these Terms at any time. Any changes will be effective immediately upon posting on the website. Your continued use of our services after any such changes constitutes your acceptance of the new Terms.
                         </p>
                         <h2>9. Contact Information</h2>
                         <p>

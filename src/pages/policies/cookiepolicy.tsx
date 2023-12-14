@@ -9,7 +9,7 @@ export default function cookiepolicy() {
                     <div className="flex flex-col gap-3">
                         <h1 className="font-bold text-5xl pb-3">Cookie Policy</h1>
                         <p>
-                            This Cookie Policy explains how Founder's Den ("we," "us," or "our") uses cookies and similar technologies when you visit our website or use our services. By using our services, you consent to the use of cookies as described in this policy.
+                            This Cookie Policy explains how Founder&apos;s Den (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) uses cookies and similar technologies when you visit our website or use our services. By using our services, you consent to the use of cookies as described in this policy.
                         </p>
                         <h2>1. What are Cookies?</h2>
                         <p>
