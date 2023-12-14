@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Navbar() {
     return (
-        <div className="w-full flex flex-row justify-center">
-            <div className="navbar bg-base-100 max-w-7xl ">
+        <div className="w-full flex bg-base-100 flex-row justify-center">
+            <div className="navbar max-w-7xl ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

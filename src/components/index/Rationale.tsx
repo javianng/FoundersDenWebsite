@@ -6,7 +6,7 @@ import indexRationaleTechnicalExperts from "public/indexRationaleTechnicalExpert
 
 export default function Rationale() {
     return (
-        <FixedWidthContainer>
+        <FixedWidthContainer innerclassname="lg:py-4">
             <h1 className="text-center text-3xl">
                 Built By <span className="text-brand-500 ">Entrepreneurs</span> For <span className="text-brand-500">Entrepreneurs</span>
             </h1>
