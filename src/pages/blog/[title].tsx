@@ -31,7 +31,7 @@ export default function BlogPost() {
     return (
         <PageLayout>
             <ReadingWidthContainer>
-                <h1 className='font-bold text-5xl text-brand-400'>
+                <h1 className='font-bold text-5xl'>
                     {data?.title}
                 </h1>
                 <div className="w-full flex items-center py-9 justify-between">

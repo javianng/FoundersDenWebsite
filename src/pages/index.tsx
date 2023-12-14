@@ -1,7 +1,7 @@
 import { type NextPage } from "next";
 
 import PageLayout from "~/components/common/PageLayout";
-import Features from "~/components/index/Features";
+import Rationale from "~/components/index/Rationale";
 import Hero from "~/components/index/Hero";
 import WhyUs from "~/components/index/WhyUs";
 
@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <PageLayout>
             <main>
                 <Hero />
-                <Features />
+                <Rationale />
                 <WhyUs />
             </main>
         </PageLayout>

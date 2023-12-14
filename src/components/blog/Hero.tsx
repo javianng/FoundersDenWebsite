@@ -8,7 +8,7 @@ export default function Hero() {
                     <h1 className="mb-5 text-5xl font-bold text-brand-500 uppercase">
                         Founder&apos;s Blog
                     </h1>
-                    <p className="font-medium text-brand-400">Empowering Entrepreneurs: Where Visionaries Find Wisdom, Fueling Success One Insight at a Time.</p>
+                    <p className="font-medium">Empowering Entrepreneurs: Where Visionaries Find Wisdom, Fueling Success One Insight at a Time.</p>
                 </div>
             </div>
         </div >
