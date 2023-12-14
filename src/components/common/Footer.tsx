@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <div className="flex flex-col px-2">
@@ -5,15 +7,15 @@ export default function Footer() {
                 <footer className="footer px-10 pt-10 pb-4 text-base-content max-w-7xl">
                     <nav>
                         <header className="footer-title">Company</header>
-                        <a className="link link-hover">About us</a>
-                        <a className="link link-hover">Contact</a>
-                        <a className="link link-hover">Jobs</a>
+                        <Link className="link link-hover" href="/aboutus">About us</Link>
+                        {/* <Link className="link link-hover" href={""}>Contact</Link> */}
+                        <Link className="link link-hover" href={"/joinus"}>Jobs</Link>
                     </nav>
                     <nav>
                         <header className="footer-title">Legal</header>
-                        <a className="link link-hover">Terms of use</a>
-                        <a className="link link-hover">Privacy policy</a>
-                        <a className="link link-hover">Cookie policy</a>
+                        <Link className="link link-hover" href={"/policies/termsofuse"}>Terms of use</Link>
+                        <Link className="link link-hover" href={"/policies/privacypolicy"}>Privacy policy</Link>
+                        <Link className="link link-hover" href={"/policies/cookiepolicy"}>Cookie policy</Link>
                     </nav>
                     <form>
                         <header className="footer-title">Newsletter</header>

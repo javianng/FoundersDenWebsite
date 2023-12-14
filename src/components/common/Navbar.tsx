@@ -16,7 +16,7 @@ export default function Navbar() {
                             <li><Link href="/joinus">Join Us</Link></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">Founder&apos;s Den</a>
+                    <Link href={"/"} className="btn btn-ghost text-xl">Founder&apos;s Den </Link>
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
