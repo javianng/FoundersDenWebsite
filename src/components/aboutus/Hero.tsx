@@ -1,16 +1,18 @@
-export default function c() {
+import Image from "next/image"
+import aboutUs from "public/aboutUs.jpeg"
+import FixedWidthContainer from "../common/FixedWidthContainer"
+
+export default function Hero() {
     return (
-        <div className="hero max-h-screen min-h-[40em] h-[60vh] shadow-lg"
-            style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1526948531399-320e7e40f0ca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)' }}>
-            <div className="hero-overlay bg-opacity-70"></div>
-            <div className="hero-content text-center text-neutral-content">
-                <div className="bg-slate-100 px-32 py-6">
-                    <h1 className="mb-5 text-5xl font-bold text-brand-500 uppercase">
-                        About Us
-                    </h1>
-                    <p className="font-medium text-brand-400">The team behind this project.</p>
+        <FixedWidthContainer>
+            <div className="py-2 lg:py-10 flex flex-col lg:flex-row items-center gap-4">
+                <h1 className=" text-5xl font-semibold w-full lg:w-[66%] text-brand-400">
+                    We&apos;re your launchpad for startup success – where <span className="text-brand-500"> connections spark innovation </span>, and your game-changing move is just <span className=" text-brand-500">a swipe away</span>!
+                </h1>
+                <div className="w-full lg:w-[33%]">
+                    <Image src={aboutUs} alt={""} className="card" placeholder='blur' />
                 </div>
             </div>
-        </div >
+        </FixedWidthContainer>
     )
 }

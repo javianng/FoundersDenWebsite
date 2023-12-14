@@ -1,30 +1,37 @@
+import Link from "next/link";
+
 export default function Hero() {
     return (
         <div className="flex justify-center">
-            <div className="w-screen max-w-7xl mx-12">
+            <div className="w-screen max-w-7xl lg:mx-12">
                 <div className="max-w-7xl">
-                    <div className="grid grid-cols-2 h-screen max-h-[42rem]">
-                        <div className="hero" style={{ backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)' }}>
-                            <div className="hero-overlay bg-opacity-60"></div>
+                    <div className="grid grid-rows-2 gird-cols-1 lg:grid-rows-1 lg:grid-cols-2 h-screen max-h-[42rem]">
+                        <div className="hero group" style={{ backgroundImage: 'url(/indexHeroFounder.jpeg)' }}>
+                            <div className="hero-overlay bg-opacity-70 group-hover:bg-opacity-90 transition duration-300"></div>
                             <div className="hero-content text-center text-neutral-content">
-                                <div className="max-w-md">
-                                    <h1 className="mb-5 text-5xl font-bold">Want to be part of the next big thing?</h1>
-                                    <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                                </div>
+                                <Link href={""}>
+                                    <div className="max-w-md">
+                                        <h1 className="mb-5 text-5xl font-bold text-neutral-100">Want to be part of the <span className="text-brand-500">next big thing</span>?</h1>
+                                        <p className="mb-5 text-neutral-100">Join Forces with Visionaries: Connect with Tech Talent to Ignite Your Startup Success!</p>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
-                        <div className="hero" style={{ backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)' }}>
-                            <div className="hero-overlay bg-opacity-60"></div>
+                        <div className="hero group" style={{ backgroundImage: 'url(/indexHeroProjectFinder.jpeg)' }}>
+                            <div className="hero-overlay bg-opacity-70 group-hover:bg-opacity-90 transition duration-300"></div>
                             <div className="hero-content text-center text-neutral-content">
-                                <div className="max-w-md">
-                                    <h1 className="mb-5 text-5xl font-bold">Searching for skilled partners</h1>
-                                    <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                                </div>
+                                <Link href={""}>
+
+                                    <div className="max-w-md">
+                                        <h1 className="mb-5 text-5xl font-bold text-neutral-100"><span className="text-brand-500">Searching</span> for <span className="text-brand-500">skilled</span> partners?</h1>
+                                        <p className="mb-5 text-neutral-100">Empower Your Vision: Find the Perfect Tech Collaborator for Your Startup Journey</p>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }

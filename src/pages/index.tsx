@@ -1,16 +1,18 @@
 import { type NextPage } from "next";
 
 import PageLayout from "~/components/common/PageLayout";
-import Features from "~/components/index/Features";
+import Rationale from "~/components/index/Rationale";
 import Hero from "~/components/index/Hero";
 import WhyUs from "~/components/index/WhyUs";
+import NoAppYet from "~/components/common/NoAppYet";
 
 const Home: NextPage = () => {
     return (
         <PageLayout>
             <main>
                 <Hero />
-                <Features />
+                <NoAppYet />
+                <Rationale />
                 <WhyUs />
             </main>
         </PageLayout>
