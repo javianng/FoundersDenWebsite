@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <div className="flex flex-col px-2">
+        <div className="flex flex-col px-2 bg-neutral-200">
             <div className="flex justify-center">
                 <footer className="footer px-10 pt-10 pb-4 text-base-content max-w-7xl">
                     <nav>
@@ -31,7 +31,7 @@ export default function Footer() {
                     </form>
                 </footer>
             </div>
-            <h1 className="text-sm text-center text-brand-100 pb-6">
+            <h1 className="text-sm text-center py-6">
                 © 2023 Founder&apos;s Den | All Rights Reserved
             </h1>
         </div>

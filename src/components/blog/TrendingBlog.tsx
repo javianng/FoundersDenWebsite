@@ -24,10 +24,10 @@ export default function TrendingBlog() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {data?.map((post, counter = 0) => (
-                    <div key={post.id}>
+                    <div key={post.id} className="hover:bg-neutral-200 p-2 rounded transition duration-300">
                         <Link href={`/blog/${encodeURIComponent(post.title)}`}>
                             <div className="flex flex-row">
-                                <h1 className="mr-5 font-bold text-brand-50 text-3xl">0{counter + 1}</h1>
+                                <h1 className="mr-5 font-bold text-3xl">0{counter + 1}</h1>
                                 <div className="flex flex-col">
                                     <div className="flex items-center pt-1.5">
                                         <div className="avatar">

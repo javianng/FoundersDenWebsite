@@ -13,25 +13,21 @@ export default function NoAppYet() {
                         <h1 className="text-5xl font-bold">We are still building the platform!</h1>
                         <p className="py-6">Do subscribe to our telegram channel to be updated with entrepreneur tips and tricks! We are building a community of like-minded individual keen to challenge the status quo and come up with innovative solutions to everyday problems!</p>
                         <div className="flex flex-col gap-2 w-full items-center lg:items-start">
-                            <Link href={"https://t.me/+uhknn2UMrL5lYTQ9"} className="btn w-fit bg-brand-50">
+                            <Link href={"https://t.me/+uhknn2UMrL5lYTQ9"} className="btn w-fit bg-neutral-300 hover:bg-neutral-400">
                                 <div className="flex flex-row items-center">
-                                    <Image src={telegram as string} alt={""} className="h-8 w-8 mr-2" />
-                                    <h2 className="font-light">
-                                        Join the Channel!
-                                    </h2>
+                                    <Image src={telegram as string} alt={""} className="h-5 w-5 mr-2" />
+                                    Join the Channel!
                                 </div>
                             </Link>
-                            <Link href={"/blog"} className="btn w-fit bg-brand-50">
+                            <Link href={"/blog"} className="btn w-fit bg-neutral-300 hover:bg-neutral-400">
                                 <div className="flex flex-row items-center">
-                                    <BookOpenIcon className="w-8 h-8 mr-2 fill-brand-500" />
-                                    <h2 className="font-light">
-                                        Check out the Blogs!
-                                    </h2>
+                                    <BookOpenIcon className="h-5 w-5 mr-2 fill-neutral-950" />
+                                    Check out the Blogs!
                                 </div>
                             </Link>
                         </div>
                     </div>
-                    <div className="card shrink-0 w-full max-w-sm shadow-2xl p-4">
+                    <div className="card shrink-0 w-full max-w-sm p-4 neutral">
                         <div className="mockup-phone">
                             <div className="camera"></div>
                             <div className="display">

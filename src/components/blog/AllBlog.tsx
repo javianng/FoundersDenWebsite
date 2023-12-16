@@ -13,7 +13,7 @@ export default function AllBlog() {
         <FixedWidthContainer>
             <div className="grid grid-cols-1 gap-8">
                 {data?.map((post) => (
-                    <div className="flex h-56" key={post.id}>
+                    <div className="flex h-56 hover:bg-neutral-200 p-2 rounded transition duration-300" key={post.id}>
                         <div className="w-[55vw] ">
                             <div className="flex flex-row items-center pt-1.5">
                                 <div className="avatar">

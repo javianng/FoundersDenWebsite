@@ -26,7 +26,7 @@ export default function AboutTheFounder() {
                                     </h1>
                                     <AdjustmentsHorizontalIcon className="h-7" />
                                 </div>
-                                <div className="h-full overflow-scroll">
+                                <div className="flex flex-col h-full pb-20 overflow-scroll">
                                     <div role="alert" className="alert alert-warning mb-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
                                         <span className="text-sm font-light">This is a concept and not the actual solution!</span>
@@ -36,7 +36,7 @@ export default function AboutTheFounder() {
                                             <Image src={javian} alt={"me"} placeholder='blur' />
                                             <div className="absolute top-3 left-3">
                                                 <div>
-                                                    <CheckBadgeIcon className="h-7 fill-brand-600" />
+                                                    <CheckBadgeIcon className="h-7 fill-neutral-600" />
                                                 </div>
                                             </div>
                                             <div className="absolute bottom-3 left-3">
@@ -80,16 +80,15 @@ export default function AboutTheFounder() {
                                             I am also working on a gamified solution that seeks to combat doom scrolling. As I do not have the technical expertise to build the game, I am looking for a game developer to join me as a co-founder. Knowledge in graphics designing would be an added advantage otherwise we would welcome a graphics designer on board.
                                         </p>
                                     </div>
-                                    <div className=" h-20" />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col gap-5">
-                        <p className="text-brand-400 font-normal text-sm">
+                        <p className="font-normal text-sm">
                             Hello! I am Javian, the founder behind Founder&apos;s Den. I founded Founder&apos;s Den with a mission to empower entrepreneurs by connecting them with the technical expertise vital for startup success. Over the years, I&apos;ve gained valuable experience in the business analytics and technology field, earning recognition for my dynamic approach and unwavering commitment to innovation. My passion for coding and entrepreneurship fuels my dedication to fostering a collaborative ecosystem for startup growth. I firmly believe in the power of meaningful connections, and I&apos;m excited to lead Founder&apos;s Den in becoming the go-to platform for visionary founders seeking the perfect technical match for their startups.
                         </p>
-                        <div className="pl-4 border-l-2 border-brand-400">
+                        <div className="pl-4 border-l-2 border-neutral-400">
                             <h2 className="capitalize">
                                 Connect with me
                             </h2>
