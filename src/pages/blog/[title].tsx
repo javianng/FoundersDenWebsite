@@ -31,7 +31,7 @@ export default function BlogPost() {
     return (
         <PageLayout>
             <ReadingWidthContainer>
-                <h1 className='font-bold text-5xl'>
+                <h1 className='font-bold text-3xl sm:text-4xl md:text-5xl'>
                     {data?.title}
                 </h1>
                 <div className="w-full flex items-center py-9 justify-between">
@@ -60,10 +60,10 @@ export default function BlogPost() {
                         </h3>
                     </div>
                 </div>
-                <hr className='my-4 border-brand-500' />
+                <hr className='my-4 border-neutral-500' />
                 <div className='flex flex-row justify-between'>
                     <div className='flex flex-row'>
-                        <EyeIcon className='w-6 h-6 text-brand-200 ml-4 mr-2' />
+                        <EyeIcon className='w-6 h-6 text-neutral-950 ml-4 mr-2' />
                         <h4>
                             {data?.views}
                         </h4>
@@ -107,7 +107,7 @@ export default function BlogPost() {
                         </TelegramShareButton>
                     </div>
                 </div>
-                <hr className='my-4 border-brand-500' />
+                <hr className='my-4 border-neutral-500' />
                 <Image
                     src={data?.authorimage ?? question_mark}
                     width={1600}

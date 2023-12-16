@@ -13,7 +13,7 @@ export default function AllBlog() {
         <FixedWidthContainer>
             <div className="grid grid-cols-1 gap-8">
                 {data?.map((post) => (
-                    <div className="flex h-56" key={post.id}>
+                    <div className="flex h-56 hover:bg-neutral-200 p-2 rounded transition duration-300" key={post.id}>
                         <div className="w-[55vw] ">
                             <div className="flex flex-row items-center pt-1.5">
                                 <div className="avatar">
@@ -26,10 +26,10 @@ export default function AllBlog() {
                                         />
                                     </div>
                                 </div>
-                                <h3 className="text-base">{post.author}</h3>
+                                <h3>{post.author}</h3>
                             </div>
                             <Link href={`/blog/${encodeURIComponent(post.title)}`}>
-                                <h2 className="font-extrabold capitalize line-clamp-2 my-2 text-2xl">{post.title}</h2>
+                                <h2 className="font-extrabold capitalize line-clamp-2 my-2 text-xl sm:text-2xl">{post.title}</h2>
                                 <p className="line-clamp-3 mb-2">{post.summary}</p>
                                 <div className="flex flex-col">
                                     <h4 className="font-extralight">

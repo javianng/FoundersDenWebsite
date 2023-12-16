@@ -7,7 +7,7 @@ export default function termsofuse() {
             <main>
                 <FixedWidthContainer>
                     <div className="flex flex-col gap-3">
-                        <h1 className="font-bold text-5xl pb-3">Terms of Use</h1>
+                        <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl pb-3">Terms of Use</h1>
                         <p>
                             Welcome to Founder&apos;s Den! These terms of use (&quot;Terms&quot;) govern your use of our website, services, and related content. By accessing or using our services, you agree to comply with and be bound by these Terms. If you do not agree with any part of these Terms, please do not use our services.
                         </p>

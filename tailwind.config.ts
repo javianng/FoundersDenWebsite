@@ -5,17 +5,6 @@ export default {
     content: ["./src/**/*.tsx"],
     theme: {
         extend: {
-            colors: {
-                brand: {
-                    50: "#BDD5E0",
-                    100: "#92A8B3",
-                    200: "#687E88",
-                    300: "#415660",
-                    400: "#1C313A",
-                    500: "#D37B0F",
-                    600: "#7A3200",
-                },
-            },
             fontFamily: {
                 // sans: ["var(--font-sans)", ...fontFamily.sans],
             },
