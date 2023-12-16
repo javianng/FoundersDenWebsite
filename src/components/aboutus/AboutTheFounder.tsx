@@ -18,7 +18,7 @@ export default function AboutTheFounder() {
                     <div className="mockup-phone min-w-fit">
                         <div className="camera"></div>
                         <div className="display">
-                            <div className="artboard phone-1 bg-slate-50 pt-7 px-3">
+                            <div className="artboard phone-1 bg-neutral-50 pt-7 px-3">
                                 <div className="h-fit flex flex-row items-center justify-between pb-2">
                                     <Bars3Icon className="h-7" />
                                     <h1 className="lowercase text-sm font-thin">
@@ -57,18 +57,18 @@ export default function AboutTheFounder() {
                                     <div className="flex flex-row h-fit items-center pt-3">
                                         <h2 className="font-light text-sm pr-2 whitespace-nowrap">Looking for:</h2>
                                         <div className="flex flex-row gap-2 flex-wrap">
-                                            <div className="badge border-black bg-slate-100 font-light text-xs whitespace-nowrap">Co-Founder</div>
-                                            <div className="badge border-black bg-slate-100 font-light text-xs whitespace-nowrap">Game Developer</div>
-                                            <div className="badge border-black bg-slate-100 font-light text-xs whitespace-nowrap">Graphics Designer</div>
+                                            <div className="badge border-black bg-neutral-100 font-light text-xs whitespace-nowrap">Co-Founder</div>
+                                            <div className="badge border-black bg-neutral-100 font-light text-xs whitespace-nowrap">Game Developer</div>
+                                            <div className="badge border-black bg-neutral-100 font-light text-xs whitespace-nowrap">Graphics Designer</div>
                                         </div>
                                     </div>
                                     <hr className="mt-3" />
                                     <div className="flex flex-row h-fit items-center pt-3">
                                         <h2 className="font-light text-sm pr-2 whitespace-nowrap">My Interests:</h2>
                                         <div className="flex flex-row gap-2 flex-wrap">
-                                            <div className="badge border-black bg-slate-100 font-light text-xs">Golf</div>
-                                            <div className="badge border-black bg-slate-100 font-light text-xs">Fintech</div>
-                                            <div className="badge border-black bg-slate-100 font-light text-xs">Enterpreneurship</div>
+                                            <div className="badge border-black bg-neutral-100 font-light text-xs">Golf</div>
+                                            <div className="badge border-black bg-neutral-100 font-light text-xs">Fintech</div>
+                                            <div className="badge border-black bg-neutral-100 font-light text-xs">Enterpreneurship</div>
                                         </div>
                                     </div>
                                     <hr className="mt-3" />
@@ -93,33 +93,33 @@ export default function AboutTheFounder() {
                                 Connect with me
                             </h2>
                             <div className="grid grid-flow-row justify-start gap-2 pt-4">
-                                <div className="flex flex-row gap-3 items-center">
+                                <div className="flex flex-row gap-1 items-center group">
                                     <SocialIcon url="https://www.linkedin.com/in/javianngzh/" style={{ height: 35, width: 35 }} />
-                                    <h3 className="font-light">
+                                    <h3 className="font-light group-hover:bg-neutral-200 p-2 rounded duration-150">
                                         LinkedIn
                                     </h3>
                                 </div>
-                                <div className="flex flex-row gap-3 items-center">
+                                <div className="flex flex-row gap-1 items-center group">
                                     <SocialIcon url="https://x.com/j_avianzz" style={{ height: 35, width: 35 }} />
-                                    <h3 className="font-light">
+                                    <h3 className="font-light group-hover:bg-neutral-200 p-2 rounded duration-150">
                                         X
                                     </h3>
                                 </div>
-                                <div className="flex flex-row gap-3 items-center">
+                                <div className="flex flex-row gap-1 items-center group">
                                     <SocialIcon url="https://github.com/javianng" style={{ height: 35, width: 35 }} />
-                                    <h3 className="font-light">
+                                    <h3 className="font-light group-hover:bg-neutral-200 p-2 rounded duration-150">
                                         GitHub
                                     </h3>
                                 </div>
-                                <div className="flex flex-row gap-3 items-center">
+                                <div className="flex flex-row gap-1 items-center group">
                                     <SocialIcon url="mailto:javian.ng.z.h@gmail.com" style={{ height: 35, width: 35 }} />
-                                    <h3 className="font-light">
+                                    <h3 className="font-light group-hover:bg-neutral-200 p-2 rounded duration-150">
                                         Mail
                                     </h3>
                                 </div>
-                                <div className="flex flex-row gap-3 items-center">
+                                <div className="flex flex-row gap-1 items-center group">
                                     <SocialIcon url="https://rebrand.ly/javianngportfolio" style={{ height: 35, width: 35 }} />
-                                    <h3 className="font-light">
+                                    <h3 className="font-light group-hover:bg-neutral-200 p-2 rounded duration-150">
                                         My Website
                                     </h3>
                                 </div>

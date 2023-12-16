@@ -7,7 +7,7 @@ export default function Hero() {
                 <div className="max-w-7xl">
                     <div className="grid grid-rows-2 gird-cols-1 lg:grid-rows-1 lg:grid-cols-2 h-screen max-h-[42rem]">
                         <div className="hero group" style={{ backgroundImage: 'url(/indexHeroFounder.jpeg)' }}>
-                            <div className="bg-neutral-800 hero-overlay bg-opacity-70 group-hover:bg-opacity-90 transition duration-300"></div>
+                            <div className="bg-neutral-800 hero-overlay bg-opacity-70 group-hover:bg-opacity-90 transition duration-150"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 <Link href={""}>
                                     <div className="max-w-md">
@@ -18,7 +18,7 @@ export default function Hero() {
                             </div>
                         </div>
                         <div className="hero group" style={{ backgroundImage: 'url(/indexHeroProjectFinder.jpeg)' }}>
-                            <div className="bg-neutral-800 hero-overlay bg-opacity-70 group-hover:bg-opacity-90 transition duration-300"></div>
+                            <div className="bg-neutral-800 hero-overlay bg-opacity-70 group-hover:bg-opacity-90 transition duration-150"></div>
                             <div className="hero-content text-center text-neutral-content">
                                 <Link href={""}>
 
