@@ -10,7 +10,7 @@ export default function OurStory() {
                 <FixedWidthContainer>
                     <div className="flex flex-col gap-3 w-full chat-start chat">
                         <div className="chat-bubble bg-neutral-800 flex flex-col gap-4 p-8 shadow-lg">
-                            <h2 className="text-3xl font-bold capitalize text-neutral-50 underline underline-offset-4">
+                            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold capitalize text-neutral-50 underline underline-offset-4">
                                 About founder&apos;s den
                             </h2>
                         </div>
@@ -25,7 +25,7 @@ export default function OurStory() {
                     <div className="flex flex-row gap-7 items-center">
                         <div className="flex flex-col gap-3 w-full lg:w-[66%] chat-start chat">
                             <div className="chat-bubble bg-neutral-800 flex flex-col gap-4 p-8 shadow-lg">
-                                <h2 className="text-3xl font-bold capitalize text-neutral-50 underline underline-offset-4">
+                                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold capitalize text-neutral-50 underline underline-offset-4">
                                     Our vision
                                 </h2>
                             </div>
@@ -47,7 +47,7 @@ export default function OurStory() {
                         </div>
                         <div className="flex flex-col gap-3 w-full lg:w-[66%] chat-end chat">
                             <div className="chat-bubble bg-neutral-300 flex flex-col gap-4 p-8 shadow-lg">
-                                <h2 className="text-3xl font-bold capitalize text-neutral-950 underline underline-offset-4">
+                                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold capitalize text-neutral-950 underline underline-offset-4">
                                     Our mission
                                 </h2>
                             </div>

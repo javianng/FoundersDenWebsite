@@ -5,7 +5,7 @@ export default function Hero() {
             <div className="hero-overlay bg-opacity-70 bg-neutral-800"></div>
             <div className="hero-content text-center text-neutral-content">
                 <div className="bg-neutral-100 lg:px-32 py-6">
-                    <h1 className="mb-5 text-5xl font-bold text-neutral-950 Capitalize">
+                    <h1 className="mb-5 text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-950 Capitalize">
                         Founder&apos;s Blog
                     </h1>
                     <p className="font-medium">Empowering Entrepreneurs: Where Visionaries Find Wisdom, Fueling Success One Insight at a Time.</p>

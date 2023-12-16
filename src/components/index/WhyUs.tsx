@@ -6,7 +6,7 @@ export default function WhyUs() {
             <div className="hero">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Why Founder&apos;s Den?</h1>
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">Why Founder&apos;s Den?</h1>
                         <p className="py-6">Founder&apos;s Den revolutionizes the entrepreneurial landscape. We empower visionaries to connect with technical experts, flipping traditional startup norms. By prioritizing collaboration, kindness, and respect, we create a secure online haven for founders to forge partnerships, turning dreams into thriving ventures.</p>
                         <button className="btn bg-neutral-300 hover:bg-neutral-400">
                             Learn More

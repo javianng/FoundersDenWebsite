@@ -11,7 +11,7 @@ export default function Hero() {
                             <div className="hero-content text-center text-neutral-content">
                                 <Link href={""}>
                                     <div className="max-w-md">
-                                        <h1 className="mb-5 text-5xl font-light text-neutral-100">Want to be part of the <span className="text-neutral-100 font-bold">next big thing</span>?</h1>
+                                        <h1 className="mb-5 text-3xl sm:text-4xl md:text-5xl font-light text-neutral-100">Want to be part of the <span className="text-neutral-100 font-bold">next big thing</span>?</h1>
                                         <p className="mb-5 text-neutral-100">Join Forces with Visionaries: Connect with Tech Talent to Ignite Your Startup Success!</p>
                                     </div>
                                 </Link>
@@ -23,7 +23,7 @@ export default function Hero() {
                                 <Link href={""}>
 
                                     <div className="max-w-md">
-                                        <h1 className="mb-5 text-5xl font-light text-neutral-100">
+                                        <h1 className="mb-5 text-3xl sm:text-4xl md:text-5xl font-light text-neutral-100">
                                             <span className="font-bold text-neutral-100">Searching</span> for<br />
                                             <span className="font-bold text-neutral-100">skilled</span> partners?
                                         </h1>

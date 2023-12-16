@@ -9,7 +9,7 @@ export default function AboutTheFounder() {
         <FixedWidthContainer>
             <div className="flex flex-row justify-center items-center underline underline-offset-4">
                 <UserCircleIcon className="w-10 h-10 mr-2" />
-                <h1 className="text-3xl text-center font-bold capitalize">
+                <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-bold capitalize">
                     About the founder
                 </h1>
             </div>
@@ -85,7 +85,7 @@ export default function AboutTheFounder() {
                         </div>
                     </div>
                     <div className="flex flex-col gap-5">
-                        <p className="font-normal text-sm">
+                        <p className="font-normal">
                             Hello! I am Javian, the founder behind Founder&apos;s Den. I founded Founder&apos;s Den with a mission to empower entrepreneurs by connecting them with the technical expertise vital for startup success. Over the years, I&apos;ve gained valuable experience in the business analytics and technology field, earning recognition for my dynamic approach and unwavering commitment to innovation. My passion for coding and entrepreneurship fuels my dedication to fostering a collaborative ecosystem for startup growth. I firmly believe in the power of meaningful connections, and I&apos;m excited to lead Founder&apos;s Den in becoming the go-to platform for visionary founders seeking the perfect technical match for their startups.
                         </p>
                         <div className="pl-4 border-l-2 border-neutral-400">
@@ -95,31 +95,31 @@ export default function AboutTheFounder() {
                             <div className="grid grid-flow-row justify-start gap-2 pt-4">
                                 <div className="flex flex-row gap-3 items-center">
                                     <SocialIcon url="https://www.linkedin.com/in/javianngzh/" style={{ height: 35, width: 35 }} />
-                                    <h3 className="text-sm font-light">
+                                    <h3 className="font-light">
                                         LinkedIn
                                     </h3>
                                 </div>
                                 <div className="flex flex-row gap-3 items-center">
                                     <SocialIcon url="https://x.com/j_avianzz" style={{ height: 35, width: 35 }} />
-                                    <h3 className="text-sm font-light">
+                                    <h3 className="font-light">
                                         X
                                     </h3>
                                 </div>
                                 <div className="flex flex-row gap-3 items-center">
                                     <SocialIcon url="https://github.com/javianng" style={{ height: 35, width: 35 }} />
-                                    <h3 className="text-sm font-light">
+                                    <h3 className="font-light">
                                         GitHub
                                     </h3>
                                 </div>
                                 <div className="flex flex-row gap-3 items-center">
                                     <SocialIcon url="mailto:javian.ng.z.h@gmail.com" style={{ height: 35, width: 35 }} />
-                                    <h3 className="text-sm font-light">
+                                    <h3 className="font-light">
                                         Mail
                                     </h3>
                                 </div>
                                 <div className="flex flex-row gap-3 items-center">
                                     <SocialIcon url="https://rebrand.ly/javianngportfolio" style={{ height: 35, width: 35 }} />
-                                    <h3 className="text-sm font-light">
+                                    <h3 className="font-light">
                                         My Website
                                     </h3>
                                 </div>
