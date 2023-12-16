@@ -7,7 +7,7 @@ import Image from "next/image"
 import ReadingWidthContainer from '~/components/common/ReadingWidthContainer';
 import PageLayout from '~/components/common/PageLayout';
 
-import question_mark from "public/question_mark.png"
+import question_mark from "public/question_mark.svg"
 
 import { EyeIcon } from '@heroicons/react/24/solid';
 import { Interweave } from 'interweave';
@@ -18,7 +18,7 @@ export default function BlogPost() {
     const router = useRouter();
     const { title } = router.query;
 
-    const { data } = api.post.readByTitle.useQuery({
+    const { data } = api.post.readByTitleWithIncrement.useQuery({
         title: title as string,
     });
 
@@ -34,12 +34,12 @@ export default function BlogPost() {
                 <h1 className='font-bold text-3xl sm:text-4xl md:text-5xl'>
                     {data?.title}
                 </h1>
-                <div className="w-full flex items-center py-9 justify-between">
+                <div className="w-full flex items-center py-7 justify-between">
                     <div className="flex items-center">
                         <div className="avatar">
                             <div className="w-12 rounded mr-4">
                                 <Image
-                                    src={data?.authorimage ?? question_mark}
+                                    src={data?.authorimage ?? question_mark as string}
                                     alt={data?.author ?? ""}
                                     width={300}
                                     height={300}
@@ -60,6 +60,13 @@ export default function BlogPost() {
                         </h3>
                     </div>
                 </div>
+                <div className='gap-2 flex'>
+                    {data?.tags?.map((tag) => (
+                        <div key={tag.id} className='badge badge-neutral bg-neutral-700 text-neutral-100'>
+                            {tag.tag}
+                        </div>
+                    ))}
+                </div>
                 <hr className='my-4 border-neutral-500' />
                 <div className='flex flex-row justify-between'>
                     <div className='flex flex-row'>
@@ -69,47 +76,41 @@ export default function BlogPost() {
                         </h4>
                     </div>
                     <div className='flex gap-2'>
-                        <LinkedinShareButton
-                            url={shareUrl}
-                        >
-                            <LinkedinIcon size={32} round />
-                        </LinkedinShareButton>
-                        <FacebookShareButton
-                            url={shareUrl}
-                        >
-                            <FacebookIcon size={32} round />
-                        </FacebookShareButton>
-                        <RedditShareButton
-                            url={shareUrl}
-                            title={data?.title ?? ""}
-                            windowWidth={660}
-                            windowHeight={460}
-                        >
-                            <RedditIcon size={32} round />
-                        </RedditShareButton>
-                        <TwitterShareButton
-                            url={shareUrl}
-                            title={data?.title ?? ""}
-                        >
-                            <XIcon size={32} round />
-                        </TwitterShareButton>
-                        <WhatsappShareButton
-                            url={shareUrl}
-                            title={data?.title ?? ""}
-                        >
-                            <WhatsappIcon size={32} round />
-                        </WhatsappShareButton>
-                        <TelegramShareButton
-                            url={shareUrl}
-                            title={data?.title ?? ""}
-                        >
-                            <TelegramIcon size={32} round />
-                        </TelegramShareButton>
+                        <div className="tooltip" data-tip="Share to LinkedIn">
+                            <LinkedinShareButton url={shareUrl}>
+                                <LinkedinIcon size={32} round />
+                            </LinkedinShareButton>
+                        </div>
+                        <div className="tooltip" data-tip="Share to Facebook">
+                            <FacebookShareButton url={shareUrl}>
+                                <FacebookIcon size={32} round />
+                            </FacebookShareButton>
+                        </div>
+                        <div className="tooltip" data-tip="Share to Reddit">
+                            <RedditShareButton url={shareUrl} title={data?.title ?? ""} windowWidth={660} windowHeight={460}>
+                                <RedditIcon size={32} round />
+                            </RedditShareButton>
+                        </div>
+                        <div className="tooltip" data-tip="Share to X">
+                            <TwitterShareButton url={shareUrl} title={data?.title ?? ""}>
+                                <XIcon size={32} round />
+                            </TwitterShareButton>
+                        </div>
+                        <div className="tooltip" data-tip="Share to WhatsApp">
+                            <WhatsappShareButton url={shareUrl} title={data?.title ?? ""}>
+                                <WhatsappIcon size={32} round />
+                            </WhatsappShareButton>
+                        </div>
+                        <div className="tooltip" data-tip="Share to Telegram">
+                            <TelegramShareButton url={shareUrl} title={data?.title ?? ""}>
+                                <TelegramIcon size={32} round />
+                            </TelegramShareButton>
+                        </div>
                     </div>
                 </div>
                 <hr className='my-4 border-neutral-500' />
                 <Image
-                    src={data?.authorimage ?? question_mark}
+                    src={data?.authorimage ?? question_mark as string}
                     width={1600}
                     height={1600}
                     alt={data?.title ?? ""}

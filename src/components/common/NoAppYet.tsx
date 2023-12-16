@@ -7,8 +7,18 @@ import { BookOpenIcon } from "@heroicons/react/24/solid";
 export default function NoAppYet() {
     return (
         <FixedWidthContainer>
-            <div className="hero min-h-fit">
-                <div className="hero-content flex-col lg:flex-row-reverse">
+            <div className="flex flex-col lg:flex-row items-center min-h-fit gap-4 py-4">
+                <>
+                    <div className="mockup-phone">
+                        <div className="camera"></div>
+                        <div className="display">
+                            <div className="artboard artboard-demo phone-1">
+                                <span className="loading loading-ring loading-lg" />
+                            </div>
+                        </div>
+                    </div>
+                </>
+                <div className="lg:w-[66%] flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
                         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">We are still building
                             <span className=" flex-wrap">
@@ -29,16 +39,6 @@ export default function NoAppYet() {
                                     Check out the Blogs!
                                 </div>
                             </Link>
-                        </div>
-                    </div>
-                    <div className="card shrink-0 w-full max-w-sm p-4 neutral">
-                        <div className="mockup-phone">
-                            <div className="camera"></div>
-                            <div className="display">
-                                <div className="artboard artboard-demo phone-1">
-                                    <span className="loading loading-ring loading-lg" />
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
