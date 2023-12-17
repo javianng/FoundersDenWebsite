@@ -1,14 +1,16 @@
+import NoAppYet from "~/components/common/NoAppYet";
 import PageLayout from "~/components/common/PageLayout";
-import FixedWidthContainer from "~/components/common/FixedWidthContainer";
+import Roles from "~/components/joinus/Roles";
+import Hero from "~/components/joinus/Hero";
 
 export default function joinus() {
     return (
         <PageLayout>
             <main>
-                <FixedWidthContainer>
-                    fsafa
-                </FixedWidthContainer>
+                <Hero />
+                <Roles />
+                <NoAppYet />
             </main>
-        </PageLayout>
+        </PageLayout >
     );
 };

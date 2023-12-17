@@ -18,9 +18,9 @@ model Post {
     summary     String? @db.Text
     content     String? @db.Text
     readingtime Int?
-    image       String?
+    image       String? @db.Text
     authorimage String? @db.Text
-    views       Int?
+    views       Int     @default(0)
     tags        Tag[]
 
     @@index([title])
@@ -30,13 +30,4 @@ model Tag {
     id   String @id @default(cuid())
     tag  String
     post Post[]
-}
-
-model PostToTag {
-    A Int
-    B String
-
-    @@unique([A, B], map: "_PostToTag_AB_unique")
-    @@index([B], map: "_PostToTag_B_index")
-    @@map("_PostToTag")
 }

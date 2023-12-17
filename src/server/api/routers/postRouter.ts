@@ -18,6 +18,7 @@ export const postRouter = createTRPCRouter({
             take: 6, // Get the top 6 trending posts
         });
     }),
+
     readByTitle: publicProcedure
         .input(
             z.object({
@@ -34,5 +35,31 @@ export const postRouter = createTRPCRouter({
                 throw new Error("Post not found");
             }
             return post;  // No need for await here
+        }),
+
+    readByTitleWithIncrement: publicProcedure
+        .input(
+            z.object({
+                title: z.string(),
+            }),
+        )
+        .query(async ({ ctx, input }) => {
+            // const { title } = input;
+            const post = await ctx.db.post.findUnique({
+                where: { title: input.title, },
+            });
+            if (!post) {
+                throw new Error("Post not found");
+            }
+            const updatedPost = await ctx.db.post.update({
+                where: { title: input.title, },
+                data: {
+                    views: post.views + 1,
+                },
+                include: {
+                    tags: true, // Include the tags relation
+                },
+            });
+            return updatedPost;
         }),
 });

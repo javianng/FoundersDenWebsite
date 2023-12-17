@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
     return (
-        <div className="w-full flex bg-neutral-700 flex-row justify-center">
+        <div className="w-full flex bg-neutral-950 flex-row justify-center sticky top-0 opacity-80 z-50">
             <div className="navbar max-w-7xl ">
                 <div className="navbar-start">
                     <div className="dropdown opacity-90 z-50">

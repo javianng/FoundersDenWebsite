@@ -2,7 +2,8 @@ import { api } from "~/utils/api";
 import Image from "next/image";
 
 import FixedWidthContainer from "../common/FixedWidthContainer";
-import question_mark from "public/question_mark.png"
+import question_mark from "public/question_mark.svg"
+import logo from "public/logo/defaultHighResolution.png"
 import Link from "next/link";
 
 export default function AllBlog() {
@@ -19,7 +20,7 @@ export default function AllBlog() {
                                 <div className="avatar">
                                     <div className="w-5 rounded mr-2">
                                         <Image
-                                            src={post.authorimage ?? question_mark}
+                                            src={post.authorimage ?? logo}
                                             alt={post.author}
                                             width={300}
                                             height={300}
@@ -49,7 +50,7 @@ export default function AllBlog() {
                             </Link>
                         </div>
                         <Image
-                            src={post.image ?? question_mark}
+                            src={post.image ?? question_mark as string}
                             alt={post.title}
                             width={1600} height={1600}
                             className="object-cover w-[45vw] ml-0 lg:ml-8 card"

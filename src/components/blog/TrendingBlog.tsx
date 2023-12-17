@@ -3,7 +3,7 @@ import Image from "next/image";
 import { ArrowTrendingUpIcon } from '@heroicons/react/24/solid'
 
 import FixedWidthContainer from "../common/FixedWidthContainer";
-import question_mark from "public/question_mark.png"
+import logo from "public/logo/defaultHighResolution.png"
 import Link from "next/link";
 
 export default function TrendingBlog() {
@@ -33,7 +33,7 @@ export default function TrendingBlog() {
                                         <div className="avatar">
                                             <div className="w-5 rounded mr-2">
                                                 <Image
-                                                    src={post.authorimage ?? question_mark}
+                                                    src={post.authorimage ?? logo}
                                                     alt={post.author}
                                                     width={300}
                                                     height={300}

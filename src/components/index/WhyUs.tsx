@@ -3,7 +3,7 @@ import FixedWidthContainer from "../common/FixedWidthContainer";
 export default function WhyUs() {
     return (
         <FixedWidthContainer>
-            <div className="hero">
+            <div className="hero py-4 lg:py-8">
                 <div className="hero-content gap-8 flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
                         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">Why Founder&apos;s Den?</h1>

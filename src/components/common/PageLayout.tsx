@@ -14,7 +14,7 @@ export default function PageLayout(props: PageLayoutProps) {
     const {
         children,
         title = "Founder's Den",
-        description = "Connecting Founders to Domain Expertise",
+        description = "Connecting Founders to Technical Experts",
         className = "bg-neutral-50"
     } = props;
 

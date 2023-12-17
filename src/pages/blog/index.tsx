@@ -10,7 +10,7 @@ export default function blog() {
             <Hero />
             <FixedWidthContainer>
                 <TrendingBlog />
-                <hr />
+                <hr className="border-neutral-800" />
                 <AllBlog />
             </FixedWidthContainer>
         </PageLayout >
