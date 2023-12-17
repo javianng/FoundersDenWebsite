@@ -1,7 +1,7 @@
 import Link from "next/link";
 import FixedWidthContainer from "../common/FixedWidthContainer";
 import Image from "next/image"
-import logoBackground from "public/logo/logoBackground.svg"
+import logoBackground from "public/logo/logobackground.svg"
 
 export default function Hero() {
     return (
@@ -34,7 +34,6 @@ export default function Hero() {
                     Let&apos;s Bring visionaries together
                 </h2>
             </div>
-
         </FixedWidthContainer>
     )
 }
