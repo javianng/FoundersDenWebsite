@@ -18,7 +18,7 @@ model Post {
     summary     String? @db.Text
     content     String? @db.Text
     readingtime Int?
-    image       String?
+    image       String? @db.Text
     authorimage String? @db.Text
     views       Int     @default(0)
     tags        Tag[]

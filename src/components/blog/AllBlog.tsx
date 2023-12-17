@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import FixedWidthContainer from "../common/FixedWidthContainer";
 import question_mark from "public/question_mark.svg"
+import logo from "public/logo/defaultHighResolution.png"
 import Link from "next/link";
 
 export default function AllBlog() {
@@ -19,7 +20,7 @@ export default function AllBlog() {
                                 <div className="avatar">
                                     <div className="w-5 rounded mr-2">
                                         <Image
-                                            src={post.authorimage ?? question_mark as string}
+                                            src={post.authorimage ?? logo}
                                             alt={post.author}
                                             width={300}
                                             height={300}

@@ -8,6 +8,7 @@ import ReadingWidthContainer from '~/components/common/ReadingWidthContainer';
 import PageLayout from '~/components/common/PageLayout';
 
 import question_mark from "public/question_mark.svg"
+import logo from "public/logo/defaultHighResolution.png"
 
 import { EyeIcon } from '@heroicons/react/24/solid';
 import { Interweave } from 'interweave';
@@ -39,7 +40,7 @@ export default function BlogPost() {
                         <div className="avatar">
                             <div className="w-12 rounded mr-4">
                                 <Image
-                                    src={data?.authorimage ?? question_mark as string}
+                                    src={data?.authorimage ?? logo}
                                     alt={data?.author ?? ""}
                                     width={300}
                                     height={300}
@@ -110,12 +111,12 @@ export default function BlogPost() {
                 </div>
                 <hr className='my-4 border-neutral-500' />
                 <Image
-                    src={data?.authorimage ?? question_mark as string}
+                    src={data?.image ?? question_mark as string}
                     width={1600}
                     height={1600}
                     alt={data?.title ?? ""}
                 />
-                <div>
+                <div className='pt-6'>
                     <Interweave
                         content={data?.content ?? ""}
                     />
